@@ -1,0 +1,6 @@
+services:
+  microsoft.scim.webhostsample:
+    image: ${DOCKER_REGISTRY-}microsoftscimwebhostsample
+    build:
+      context: .
+      dockerfile: Microsoft.SCIM.WebHostSample/Dockerfile

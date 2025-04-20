@@ -18,7 +18,7 @@ namespace Microsoft.SCIM.WebHostSample.Controllers
     public class TokenController : ControllerBase
     {
         private readonly IConfiguration configuration;        
-        private const int defaultTokenExpirationTimeInMins = 120;
+        private const int defaultTokenExpirationTimeInMins = 525600;
 
         public TokenController(IConfiguration Configuration)
         {
