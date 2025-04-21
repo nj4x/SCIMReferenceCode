@@ -50,7 +50,7 @@ namespace Microsoft.SCIM.WebHostSample
 
             void ConfigureJwtBearerOptons( JwtBearerOptions options)
             {
-                if (this.environment.IsDevelopment())
+                if (true || this.environment.IsDevelopment())
                 {
                     options.TokenValidationParameters =
                        new TokenValidationParameters

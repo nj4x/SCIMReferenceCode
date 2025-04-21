@@ -28,4 +28,5 @@ RUN dotnet publish "./Microsoft.SCIM.WebHostSample.csproj" -c $BUILD_CONFIGURATI
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Microsoft.SCIM.WebHostSample.dll", "--Token:IssuerSigningKey=A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D4"]
+# ENTRYPOINT ["dotnet", "Microsoft.SCIM.WebHostSample.dll", "--Token:IssuerSigningKey=A1B2C3D4E5F6A1B2C3D4E5F6A1B2C3D4"]
+ENTRYPOINT ["dotnet", "Microsoft.SCIM.WebHostSample.dll"]
